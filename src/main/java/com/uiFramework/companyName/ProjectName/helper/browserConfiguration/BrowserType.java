@@ -1,4 +1,4 @@
-package com.uiFramework.companyName.bhanuProjectName.helper.browserConfiguration;
+package com.uiFramework.companyName.ProjectName.helper.browserConfiguration;
 
 public enum BrowserType {
 	Firefox,

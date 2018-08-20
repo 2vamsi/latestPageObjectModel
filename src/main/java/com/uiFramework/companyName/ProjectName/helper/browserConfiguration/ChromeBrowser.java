@@ -1,5 +1,5 @@
 
-package com.uiFramework.companyName.bhanuProjectName.helper.browserConfiguration;
+package com.uiFramework.companyName.ProjectName.helper.browserConfiguration;
 
 
 import org.openqa.selenium.WebDriver;
@@ -7,11 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.uiFramework.companyName.bhanuProjectName.helper.resource.ResourceHelper;
+import com.uiFramework.companyName.ProjectName.helper.resource.ResourceHelper;
 
 /**
  * 
- * @author Bhanu Pratap Singh
  *
  */
 public class ChromeBrowser {

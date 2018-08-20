@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.uiFramework.companyName.bhanuProjectName.helper.logger.LoggerHelper;
+
 /**
  * 
  * @author Bhanu Pratap Singh
@@ -38,6 +39,7 @@ public class JavaScriptHelper {
 	 * @param args
 	 * @return
 	 */
+	
 	public Object executeScript(String script, Object...args){
 		JavascriptExecutor exe = (JavascriptExecutor)driver;
 		return exe.executeScript(script,args);

@@ -15,5 +15,6 @@ public class ResourceHelper {
 	
 	public static void main(String[] args) {
 		String path = ResourceHelper.getResourcePath("src/main/java/com/uiFramework/companyName/bhanuProjectName/helper/logger/LoggerHelper.java");
+		System.out.println(path);
 	}
 }

@@ -33,6 +33,7 @@ public class ExcelHelper {
 			// count number of active rows in excel sheet
 			int totalRow = sheet.getLastRowNum();
             System.out.println(totalRow);
+            
 			// count active columns in row
 			int totalColumn = sheet.getRow(0).getLastCellNum();
 

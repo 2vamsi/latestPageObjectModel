@@ -61,6 +61,7 @@ public class VerificationHelper {
 			return null;
 		}
 	}
+	
 	public String getText(WebElement element){
 		if(null == element){
 			log.info("WebElement is null..");

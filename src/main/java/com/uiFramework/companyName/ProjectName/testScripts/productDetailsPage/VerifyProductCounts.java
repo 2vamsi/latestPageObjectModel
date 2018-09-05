@@ -3,6 +3,7 @@ package com.uiFramework.companyName.ProjectName.testScripts.productDetailsPage;
 import org.testng.annotations.Test;
 
 import com.uiFramework.companyName.ProjectName.helper.assertion.AssertionHelper;
+import com.uiFramework.companyName.ProjectName.helper.browserConfiguration.config.ObjectReader;
 import com.uiFramework.companyName.ProjectName.pageObject.ApplicationText;
 import com.uiFramework.companyName.ProjectName.pageObject.LoginPage;
 import com.uiFramework.companyName.ProjectName.pageObject.NavigationMenu;
@@ -19,6 +20,7 @@ public class VerifyProductCounts extends TestBase{
 	
 	@Test
 	public void testVerifyProductCounts(){
+		getApplicationUrl(ObjectReader.reader.getUrl());
 		
 		navigationMenu = new NavigationMenu(driver);
 		ProductCategoryPage pCate = navigationMenu.clickOnMenu(navigationMenu.womenMenu);
@@ -26,7 +28,7 @@ public class VerifyProductCounts extends TestBase{
 		pCate.selectColor(ApplicationText.Orange);
 		int count = pCate.getTotalProducts();
 		
-		if(count==3){
+		if(count==4){
 			AssertionHelper.markPass();
 		}
 		else{

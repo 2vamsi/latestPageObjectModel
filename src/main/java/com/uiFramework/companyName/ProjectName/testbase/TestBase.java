@@ -104,6 +104,7 @@ public class TestBase {
 				ChromeBrowser chrome = ChromeBrowser.class.newInstance();
 				ChromeOptions option = chrome.getChromeOptions();
 				return chrome.getChromeDriver(option);
+				
 			case Firefox:
 				FirefoxBrowser firefox = FirefoxBrowser.class.newInstance();
 				FirefoxOptions options = firefox.getFirefoxOptions();
@@ -175,6 +176,7 @@ public class TestBase {
 	
 	public void getApplicationUrl(String url){
 		driver.get(url);
+		log.info("navigating to ..."+url);
 		logExtentReport("navigating to ..."+url);
 	}
 	

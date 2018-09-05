@@ -16,7 +16,6 @@ import com.uiFramework.companyName.ProjectName.testbase.TestBase;
 
 /**
  * 
- * @author Bhanu Pratap
  */
 public class NavigationMenu {
 	
